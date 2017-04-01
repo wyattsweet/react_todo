@@ -1,0 +1,16 @@
+{
+  "todos":[
+    {
+      "todo": "Practice Guitar",
+      "completed": false
+    },
+    {
+      "todo": "Wash Dishes",
+      "completed": false
+    },
+    {
+      "todo": "Do Laundry",
+      "completed": true
+    }
+  ]
+}

@@ -3,7 +3,6 @@ const path = require('path')
 module.exports = {
   context: __dirname,
   entry: [
-    'webpack-dev-server/client?http://localhost:8080',
     './js/App.js'
   ],
   devtool: 'source-map',
