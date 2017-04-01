@@ -9,6 +9,10 @@ class Todo extends React.Component {
     this.state = {todos: preload.todos}
   }
 
+  makeComplete (e) {
+    console.log(e.target)
+  }
+
   render () {
     return (
       <div>
@@ -19,9 +23,7 @@ class Todo extends React.Component {
         <ul>
           {this.state.todos.map((td) => {
             return (
-              <li>
-                {td.todo}
-              </li>
+              <li onClick={this.makeComplete} key={td.id}>{td.todo}</li>
             )
           })}
         </ul>
@@ -33,4 +35,4 @@ class Todo extends React.Component {
   }
 }
 
-render(React.createElement(Todo), document.getElementById('root'))
+render(<Todo />, document.getElementById('root'))
