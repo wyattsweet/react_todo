@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 82);
+/******/ 	return __webpack_require__(__webpack_require__.s = 85);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9482,8 +9482,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js??ref--0-1!./style.css", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js??ref--0-1!./style.css");
+		module.hot.accept("!!../node_modules/css-loader/index.js??ref--1-1!./style.css", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js??ref--1-1!./style.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -9494,51 +9494,6 @@ if(false) {
 
 /***/ }),
 /* 82 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_style_css__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__public_style_css__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-var Todo = function (_React$Component) {
-  _inherits(Todo, _React$Component);
-
-  function Todo() {
-    _classCallCheck(this, Todo);
-
-    return _possibleConstructorReturn(this, (Todo.__proto__ || Object.getPrototypeOf(Todo)).apply(this, arguments));
-  }
-
-  _createClass(Todo, [{
-    key: 'render',
-    value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, 'Hello React');
-    }
-  }]);
-
-  return Todo;
-}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
-
-__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Todo), document.getElementById('root'));
-
-/***/ }),
-/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9658,7 +9613,7 @@ function fromByteArray(uint8) {
 }
 
 /***/ }),
-/* 84 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9672,7 +9627,7 @@ function fromByteArray(uint8) {
 
 
 
-var base64 = __webpack_require__(83);
+var base64 = __webpack_require__(82);
 var ieee754 = __webpack_require__(100);
 var isArray = __webpack_require__(101);
 
@@ -11402,7 +11357,7 @@ function isnan(val) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(185)))
 
 /***/ }),
-/* 85 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {/*
@@ -11478,7 +11433,52 @@ function toComment(sourceMap) {
 
 	return '/*# ' + data + ' */';
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(84).Buffer))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(83).Buffer))
+
+/***/ }),
+/* 85 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_style_css__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__public_style_css__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var Todo = function (_React$Component) {
+  _inherits(Todo, _React$Component);
+
+  function Todo() {
+    _classCallCheck(this, Todo);
+
+    return _possibleConstructorReturn(this, (Todo.__proto__ || Object.getPrototypeOf(Todo)).apply(this, arguments));
+  }
+
+  _createClass(Todo, [{
+    key: 'render',
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, 'Wyatt\'s Todo Experience');
+    }
+  }]);
+
+  return Todo;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Todo), document.getElementById('root'));
 
 /***/ }),
 /* 86 */
@@ -23959,7 +23959,7 @@ module.exports = g;
 /* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(85)(undefined);
+exports = module.exports = __webpack_require__(84)(undefined);
 // imports
 
 

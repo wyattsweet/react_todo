@@ -2,10 +2,13 @@ const path = require('path')
 
 module.exports = {
   context: __dirname,
-  entry: './js/App.js',
+  entry: [
+    'webpack-dev-server/client?http://localhost:8080',
+    './js/App.js'
+  ],
   devtool: 'source-map',
   output: {
-    path: path.join(__dirname, '/public'),
+    path: path.resolve(__dirname, '/public'),
     filename: 'bundle.js'
   },
   resolve: {
@@ -18,6 +21,12 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        enforce: "pre",
+        test: /\.js$/,
+        loader: "eslint-loader",
+        exclude: /node_modules/
+      },
       {
         test: /\.css$/,
         use: [

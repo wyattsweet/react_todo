@@ -5,7 +5,7 @@ import '../public/style.css'
 class Todo extends React.Component {
   render () {
     return (
-      React.createElement('div', null, 'Hello React')
+      React.createElement('div', null, 'Wyatt\'s Todo Experience')
     )
   }
 }
