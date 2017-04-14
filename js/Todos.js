@@ -21,6 +21,10 @@ class Todos extends React.Component {
     this.refs.todoInput.value = ''
   }
 
+  makeComplete (id) {
+    console.log(id)
+  }
+
   render () {
     return (
       <div>
@@ -32,11 +36,17 @@ class Todos extends React.Component {
           <input type='submit' value='Add' />
         </form>
         <ul>
-          {this.props.todos.map((td) => {
-            return (
-              <li onClick={this.makeComplete} key={td.id}>{td.todo}</li>
+          {this.props.todos
+              .filter((td) => {
+                if (td.completed === false) return td
+              })
+              .map((td) => {
+                return (
+                  <li onClick={() => this.makeComplete(td.id)} key={td.id}>{td.todo}</li>
+                )
+              }
             )
-          })}
+          }
         </ul>
         <div id='filter'>
           <a href='#'>Show All</a>, <a href='#'>Completed</a>, <a href='#'>Pending</a>
