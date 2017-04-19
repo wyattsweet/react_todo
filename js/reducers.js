@@ -1,16 +1,10 @@
-import { SET_HEADER_TEXT, SET_TODO, ADD_TODO } from './actions'
+import { SET_TODO, ADD_TODO } from './actions'
 import preload from '../public/data.json'
 
 const DEFAULT_STATE = {
   header: 'Todos',
   todo: '',
   todos: preload.todos
-}
-
-const setHeaderText = (state, action) => {
-  const newState = {}
-  Object.assign(newState, state, {headerText: action.headerText})
-  return newState
 }
 
 const setTodo = (state, action) => {
@@ -32,8 +26,6 @@ const addTodo = (state, action) => {
 
 const rootReducer = (state = DEFAULT_STATE, action) => {
   switch (action.type) {
-    case SET_HEADER_TEXT:
-      return setHeaderText(state, action)
     case SET_TODO:
       return setTodo(state, action)
     case ADD_TODO:

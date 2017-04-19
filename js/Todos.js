@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 const { array, func, string } = React.PropTypes
-import { setTodo, addTodo } from './actionCreators'
+import { setTodo, addTodoAction } from './actionCreators'
 
 class Todos extends React.Component {
   constructor (props) {
@@ -16,7 +16,7 @@ class Todos extends React.Component {
 
   addTodo (e) {
     e.preventDefault()
-    this.props.dispatch(addTodo(this.props.todo))
+    this.props.dispatch(addTodoAction(this.props.todo))
     this.props.dispatch(setTodo(''))
     this.refs.todoInput.value = ''
   }
